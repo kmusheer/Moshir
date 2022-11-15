@@ -1,0 +1,91 @@
+.contact{
+    /* background-color: blueviolet; */
+    flex: 8;
+    padding: 20px;
+    margin: 5px;
+}
+
+.contactrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title
+{
+    border-bottom: 2px dotted;
+}
+.contact_content{
+    flex: 1 ;
+    padding: 20px 10px;
+    /* background-color: yellowgreen; */
+}
+.contact_content h3{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.mycontact{
+    margin: 10px;
+    font-weight: bold;
+    display: block;
+    padding: 5px 10px;
+}
+.mycontact, a address{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgb(151, 117, 117);
+    /* background-color: whitesmoke; */
+}
+
+.inputbox{
+    flex: 1.8;
+    margin: 80px auto;
+    /* display: flex;
+    flex-direction: column; */
+}
+.box1{
+    background-color: transparent;
+    box-shadow: 2px 3px 8px violet;
+    color: turquoise;
+    text-transform: capitalize;
+    width: 90%;
+    margin: 15px 3px 3px 0px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+input[type=submit]{
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(47, 38, 38);
+    box-shadow: 10px 6px 20px rgb(0, 0, 0);
+}
+input[type=submit]:hover{
+    background-color: darkgreen;
+}
+
+
+.social{
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+@media screen and (max-width:451px) {
+    .social{
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    .contact{
+        overflow-x: scroll;
+    }
+}

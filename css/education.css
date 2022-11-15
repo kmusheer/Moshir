@@ -1,0 +1,69 @@
+*{
+    font-family: 'IBM Plex Serif', serif;
+}
+.education{
+    /* background-color: blueviolet; */
+    flex: 8;
+    padding: 20px;
+    margin: 5px;
+    padding-left: 15px;
+}
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 7rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: rgb(140, 171, 172); */
+}
+.box2{
+    width:12rem;
+    height: 10rem;
+    background:#222;
+    /* text-align: center; */
+    padding: 2rem 3rem;
+    margin:1rem 3rem;
+    border-radius: 5px;
+    flex-direction: row;
+    box-shadow: 15px 6px 8px rgb(15, 14, 13);
+}
+.edsub{
+    padding-top: 4px; 
+}
+h5{
+    font-family: 'Raleway', sans-serif;
+    /* text-indent: 20px; */
+    letter-spacing: 1.2px;
+    line-height: 20px;
+}
+@media screen and (max-width:615px) {
+    .container-box{
+        padding-left: 4rem;
+    }
+    .box2{
+        overflow-y: scroll;
+
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container-box{
+        padding-left: 2rem;
+    }
+    /* .box2{
+        overflow-y: scroll;
+    } */
+}
+
+@media screen and (max-width:390px) {
+    .container-box{
+        padding: 0rem;
+        margin: 0px;
+        /* background-color: blue; */
+    }
+    .box2{
+        width: 100vw;
+        height: auto;
+        margin: 1rem 0rem;
+    }
+}

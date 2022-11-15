@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Serif', serif;
+}
+ html{
+    overflow-x: hidden;
+} 
+html::-webkit-scrollbar{
+    width:1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: #fff;
+} 
+html::-webkit-scrollbar-thumb{
+    background-color: rgb(129, 46, 46);
+    border-radius: 3rem;
+} 
+
+
+.container{
+    display: flex;
+    background-color: rgb(4, 28, 29);
+    color: aqua;
+    /* height: 100vh; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+header{
+    margin-left: 5px;
+    background-color: rgb(47, 38, 38);
+    flex: 2;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    box-shadow: 15px 6px 8px rgb(15, 14, 13);
+
+}
+.user{
+    padding-top: 20%;
+}
+.img1{
+    border: 3px solid gold;
+    border-radius: 90px;
+    margin-bottom: 5px;
+    object-fit: cover;
+}
+.img1:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+header li{
+    box-shadow: 3px 3px 6px 0px rgb(235, 187, 235);
+    /* box-shadow: 5px 6px 8px 0px violet; */
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px 5px;
+    border: 2px solid;
+    margin: 12px 5px;
+    cursor: pointer;
+    list-style: none;
+    align-items: center;
+}
+header li a{
+    text-decoration: none;
+    color: rgb(34, 31, 28);
+    padding: 4px 70px;
+    display: block;
+    color: blanchedalmond;
+}
+
+header li:hover{
+    background-color: darkgreen;
+}
+
+.home{
+    flex: 8;
+    padding: 20px;
+    margin: 0px;
+    margin-top: 15%;
+}
+.subhome{
+    margin: 10px 160px;
+    padding: 5px 10px;
+}
+.my-name {
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: musheer 2s ease-in-out 2s infinite normal backwards;
+}
+
+p{
+    font-family: 'Sarabun', sans-serif;
+    color: rgb(255, 255, 255);
+}
+p,.subhome1{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 20px;   
+}
+/* @keyframes musheer{
+    from{
+        text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+} */
+button{
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(47, 38, 38);
+    box-shadow: 10px 6px 20px rgb(0, 0, 0);
+}
+.btn-1:hover{
+    background-color: darkgreen;
+}
+
+button:focus{
+    background-color: rgb(34, 255, 34);
+    width: 160px;
+}
+.heading{
+    text-align: center;
+    font-size: 35px;
+    padding: 10px 2px;
+    font-weight: bold;
+    border-bottom: 3px solid;
+    /* color: #fff;
+    text-shadow:
+    0 0 7px rgb(212, 170, 170),
+    0 0 10px rgb(185, 146, 146),
+    0 0 21px rgb(192, 161, 161),
+    0 0 42px rgb(48, 68, 61),
+    0 0 60px rgb(50, 104, 86),
+    0 0 80px rgb(22, 98, 73),
+    0 0 90px rgb(13, 63, 46),
+    0 0 121px rgb(1, 15, 10); */
+}
+span{
+    color: yellowgreen;
+    /* background-color: yellow; */
+} 
+
+ @media screen  and (max-width:771px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        /* align-items: center; */
+    }
+    header{
+         width: 100%;
+        margin-bottom: 5px;
+        padding-bottom: 10px; 
+        margin: 0%;
+        padding: 0%; 
+    }
+    .navigation li{
+        width: 90%;
+        margin: 15px auto;
+    }
+    .subhome{
+        width: auto;
+        margin: 10px 10px;
+        padding: 5px 10px;
+    }
+    } 
+
+

@@ -1,0 +1,28 @@
+*{
+    font-family: 'IBM Plex Serif', serif;
+}
+.softskill{
+    /* background-color: blueviolet; */
+    flex: 8;
+    padding: 20px;
+    padding-left: 15px;
+    margin: 5px;
+}
+
+.smain{
+    margin: 100px auto;
+    width: 400px;
+}
+.sh2{
+    margin: 10px auto;    
+    /* background-color: blueviolet; */
+}
+
+@media screen and (max-width:370px) {
+   
+    .sh2{
+        font-size: 15px;
+        
+    }
+    
+}

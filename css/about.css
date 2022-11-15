@@ -1,0 +1,160 @@
+*{
+    font-family: 'IBM Plex Serif', serif;
+
+}
+.about{
+    /* background-color: blueviolet; */
+    flex: 8;
+    padding: 20px;
+    padding-left: 15px;
+    margin: 5px;
+}
+.rowabout{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    /* flex-direction: row; */
+    /* background-color: rgb(3, 62, 65); */
+}
+.subabout{
+    flex:1 1;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+    /* background-color: rgb(45, 87, 87); */
+
+}
+.about .rowabout .subabout h3{
+    font-size: 1.3rem;
+    /* color:var(--yellow); */
+    padding:1rem 0;
+    font-weight: normal;
+    /* backgroun d-color: rgb(112, 143, 140); */
+    /* padding: 10px; */
+}
+.about .rowabout .subabout h3 span{
+    /* color:#eee; */
+    padding:0 .5rem;
+}
+.counter{
+    flex:1 1;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    /* background-color: yellow; */
+}
+
+.about .rowabout .counter .box{
+    width:6rem;
+    height: 6rem;
+    background:#222;
+    text-align: center;
+    padding: 2rem;
+    margin:1rem;
+    border-radius: 5px;
+    flex-direction: row;
+}
+.box{
+    position: relative;
+    /* width: 50%; */
+}
+.abhead{
+    display: block;
+    width:100%;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(58, 54, 54);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 2s ease;
+}
+.box:hover .overlay{
+    width: 100%;
+}
+.overlay1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(58, 54, 54);
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: 2s ease-in-out;
+}
+.box:hover .overlay1{
+    height: 100%;
+}
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(58, 54, 54);
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: 2s ease-in-out;
+}
+.box:hover .overlay2{
+    height: 100%;
+}
+.abtext {
+    white-space: wrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+.about .rowabout .counter .box span{
+    font-size: 1.5rem;
+    /* color:var(--yellow); */
+}
+
+.about .rowabout .counter .box h3{
+    font-size: 1.5rem;
+    color:#fff;
+}
+
+@media screen  and (max-width:771px) {
+   
+    .about{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+   }
+    .subabout{
+        padding-left: 5rem;
+        margin: 0px;
+        margin-right: 10px;
+    }
+  .ab3{
+      width: 90vw;
+  }
+  .counter{
+      padding-right: 3rem;
+    }
+}
+@media screen  and (max-width:415px) {
+    .counter{
+        padding-right: 5rem;
+        padding-left: 0rem;
+    }  
+    .subabout{
+        padding-left: 1rem;
+        margin: 0px;
+        margin-right: 10px;
+    }
+}
